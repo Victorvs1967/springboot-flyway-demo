@@ -1,1 +1,1 @@
-CREATE TABLE users (id INTEGER, name VARCHAR(128), password VARCHAR(128), role VARCHAR(32));
+CREATE TABLE users (id INTEGER NOT NULL generated always as identity, name VARCHAR(128), password VARCHAR(128), role VARCHAR(32),  PRIMARY KEY(id));
